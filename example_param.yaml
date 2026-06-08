@@ -1,0 +1,72 @@
+surveys: JWST-0959+0200
+RA: 149.75 # in degree
+DEC: 2.0 # in degree
+solid_angle:
+- 9.7
+- arcmin2
+fields_name: JWST-0959+0200
+filters_program: JWST # for the filter names in transmission_filters folder
+mh_list:
+- '+0.0' # available mh values in the stellar model '+0.0', '-0.5', '-1.0', '+0.5', '+0.7', '+1.0'
+stellar_model:
+- Elf_Owl
+bands:
+- FxxxX
+- FxxxX
+- FxxxX
+- FxxxX
+- FxxxX
+- FxxxX
+- FxxxX
+- FxxxX
+depths: # in AB mag at 5 sigma
+  FxxxX:  28.0
+  FxxxX:  28.0
+  FxxxX:  28.0
+  FxxxX:  28.0
+  FxxxX:  28.0
+  FxxxX:  28.0
+  FxxxX:  28.0
+  FxxxX:  28.0
+PHOTFLAM: # Photon Flux Density in erg/s/cm^2/Angstrom
+  FxxxX:  Xe-xx
+  FxxxX:  Xe-xx
+  FxxxX:  Xe-xx
+  FxxxX:  Xe-xx
+  FxxxX:  Xe-xx
+  FxxxX:  Xe-xx
+  FxxxX:  Xe-xx
+  FxxxX:  Xe-xx
+PHOTPLAM: # Pivot Wavelength in Angstrom
+  FxxxX: 9021.53 
+  FxxxX: 11542.61
+  FxxxX: 15007.44 
+  FxxxX: 19886.48 
+  FxxxX: 27617.40 
+  FxxxX: 35683.62
+  FxxxX: 40822.38 
+  FxxxX: 44043.15
+EXPTIME: # in seconds
+  FxxxX:  3300
+  FxxxX:  3300
+  FxxxX:  3300
+  FxxxX:  3300
+  FxxxX:  3300
+  FxxxX:  3300
+  FxxxX:  3300
+  FxxxX:  3300
+detection_band: FxxxX
+mag_detectionband_start: 24.0
+mag_detectionband_final: 30.0
+mag_detectionband_bin: 0.5
+ENZO_path: /Users/..../{ENZO}
+redo_mockcatalog: false
+redo_EAZY: false
+templates:
+- hainline # Galaxy templates in the EAZY_templates folder hainline, V1p0, V1p3, larson
+- spex # Stellar templates in the EAZY_templates folder spex
+pct: 20 # percentage of the mock catalog to be used for P(z) calculation
+color_criteria: #borsani_2022, bouwen_2015
+criteria_set: 
+Calculate_numdens: true
+analysis_program: true
